@@ -10,6 +10,9 @@
 
 [x] move the ambulance vehicle over the intersection
 
+[x] get notification for arrived ambulance
+[x] print statistics about ambulance travel time
+
 ############### construction scenario
 
 [x] add vehicles

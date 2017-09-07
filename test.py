@@ -56,17 +56,37 @@ import traci
 
 STEPS = 1000
 
+ambulance_insertion_step = None
+ambulance_arrival_step   = None
+
+
 def run():
 
-        
+        global ambulance_insertion_step
+        global ambulance_arrival_step   
+
 	step = 0
 	changedRoute = False
 	
 	vehicle_id_last = []
 	vehicle_id_now  = []
-	
+
+
 	while step <= STEPS:
-	
+
+                # check if the ambulance did arrive
+
+                if ambulance_insertion_step is None:
+                        inserted_vehicles_last = traci.simulation.getDepartedIDList()
+        
+                        if "ambulance_0" in inserted_vehicles_last:
+                                ambulance_insertion_step = step
+
+                if ambulance_arrival_step is None:
+                        arrived_vehicles_last = traci.simulation.getArrivedIDList()
+                        if "ambulance_0" in arrived_vehicles_last:
+                                ambulance_arrival_step   = step 
+                
                 vehicle_id_now  = traci.vehicle.getIDList()
 
                 if step == 71:
@@ -110,6 +130,12 @@ def run():
 		step += 1
 		
 	traci.close()
+
+        print ('ambulance insterion step' ,         ambulance_insertion_step) 
+        print ('ambulance arrival   step' ,         ambulance_arrival_step) 
+        print ('ambulance travel time   ' ,         ambulance_arrival_step - ambulance_insertion_step) 
+       
+        ambulance_arrival_step   = None 
 	sys.stdout.flush()
 
 
