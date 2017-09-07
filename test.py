@@ -66,7 +66,7 @@ def run():
 	
 	while step <= STEPS:
 	
-	vehicle_id_now  = traci.vehicle.getIDList()
+                vehicle_id_now  = traci.vehicle.getIDList()
 	
 		print('step', step, 'vehicle number', len(traci.vehicle.getIDList()))
 		#if step == 20 :
