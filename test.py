@@ -81,6 +81,22 @@ def run():
                 if step == 100:
                         traci.vehicle.resume(vehID='76')
 
+
+                if step == 125:
+
+                        traci.lane.setAllowed(laneID="-324493313#0_0",
+                                              allowedClasses = ['authority'])
+
+                        traci.lane.setDisallowed(laneID="-324493313#0_0",
+                                              disallowedClasses = ['private', 'emergency', 'army', 'vip', 'passenger', 'hov', 'taxi', 'bus', 'coach',
+                                                                   'delivery', 'truck', 'trailer', 'tram', 'rail_urban', 'rail', 'rail_electric',
+                                                                   'motorcycle', 'moped', 'bicycle', 'pedestrian', 'evehicle', 'ship',
+                                                                   'custom1', 'custom2'])
+                        
+                           
+#                        print ('Dissalowed',  traci.lane.getDisallowed(laneID="-324493313#0_0")   )     
+#
+
                         
 		print('step', step, 'vehicle number', len(traci.vehicle.getIDList()))
 		#if step == 20 :

@@ -1,4 +1,8 @@
 
+[x] upload scenario data
+
+############### rescue scenario
+
 [x] find a traffic light
 [x] create traffic for the traffic light
 
@@ -6,9 +10,13 @@
 
 [x] move the ambulance vehicle over the intersection
 
-[ ] upload scenario data
+############### construction scenario
 
-[ ] are we using tests???
+[x] add vehicles
+[x] close lane
+[x] close lane via traci
+
+###############
 
 [ ] create a vehicle class
 [ ] create move_aside function
