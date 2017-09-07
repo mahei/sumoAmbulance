@@ -58,6 +58,10 @@ STEPS = 1000
 
 def run():
 
+
+        # 76
+        # sec 65
+        
 	step = 0
 	changedRoute = False
 	
@@ -67,7 +71,18 @@ def run():
 	while step <= STEPS:
 	
                 vehicle_id_now  = traci.vehicle.getIDList()
-	
+
+                if step == 70:
+                        veh_pos = traci.vehicle.getLanePosition(vehID='76')
+                     #   print (veh_pos, traci.vehicle.getSpeed(vehID='76'))
+                        traci.vehicle.setStop(vehID='76', edgeID="-324493313#1", pos=veh_pos +0.0001, flags=1)
+                        
+                #        traci.vehicle.setStop(vehID='91', edgeID="-324493313#1", pos=135.97, flags=1)
+                
+                if step == 100:
+                        traci.vehicle.resume(vehID='76')
+
+                        
 		print('step', step, 'vehicle number', len(traci.vehicle.getIDList()))
 		#if step == 20 :
 			##traci.vehicle.changeTarget(vehID='0', edgeID="-24778980#0")
