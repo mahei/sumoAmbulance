@@ -9,10 +9,12 @@
 	<gui-settings-file value="view.xml"/>
     </input>
 
+    <!-->
     <report>
         <no-duration-log value="true"/>
 		<log value="map_log.txt"/>
         <no-step-log value="true"/>
     </report>
-
+    <-->
+    
 </configuration>
