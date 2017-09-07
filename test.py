@@ -72,12 +72,17 @@ def run():
 	
                 vehicle_id_now  = traci.vehicle.getIDList()
 
-                if step == 70:
+                if step == 71:
                         veh_pos = traci.vehicle.getLanePosition(vehID='76')
                      #   print (veh_pos, traci.vehicle.getSpeed(vehID='76'))
                         traci.vehicle.setStop(vehID='76', edgeID="-324493313#1", pos=veh_pos +0.0001, flags=1)
                         
-                #        traci.vehicle.setStop(vehID='91', edgeID="-324493313#1", pos=135.97, flags=1)
+                if step == 80:
+                        traci.vehicle.moveTo(vehID="ambulance_0", laneID="-324493313#0_0", pos=0.01)
+                        
+         
+
+                        #        traci.vehicle.setStop(vehID='91', edgeID="-324493313#1", pos=135.97, flags=1)
                 
                 if step == 100:
                         traci.vehicle.resume(vehID='76')

@@ -35,7 +35,7 @@
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
 
 
-      <vehicle id="76" depart="36.00">
+  <vehicle id="76" depart="36.00">
         <route edges="324493313#1 -324493313#1 27122630#0 27122630#1 172550906 181315402#1 51844397 181324764#0 181324764#1 181324764#2 161667684#0 161667684#1"/>
     </vehicle>
 
@@ -45,6 +45,11 @@
   
     <vehicle id="93" depart="38.00">
       <route edges="-324493313#1 324493313#1 324493313#2 381393822 347976778#2 352150507#0 352150507#1 232588725 229080886 27154563#0 27154563#1"/>
+    </vehicle>
+
+
+    <vehicle id="ambulance_0" depart="60.00" color="1,1,1">
+      <route edges="-324493313#1 -324493313#0"/>
     </vehicle>
 
 

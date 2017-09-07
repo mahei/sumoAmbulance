@@ -1,6 +1,10 @@
 
 [x] find a traffic light
-[ ] create traffic for the traffic light
+[x] create traffic for the traffic light
+
+[x] create an ambulance vehicle
+
+[x] move the ambulance vehicle over the intersection
 
 [ ] upload scenario data
 
