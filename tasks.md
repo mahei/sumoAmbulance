@@ -1,3 +1,4 @@
+[x] change the route of a vehicle
 
 [x] upload scenario data
 
@@ -12,6 +13,8 @@
 
 [x] get notification for arrived ambulance
 [x] print statistics about ambulance travel time
+
+[x] write stats into new file
 
 ############### construction scenario
 

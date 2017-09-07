@@ -66,8 +66,13 @@ def run():
         global ambulance_arrival_step   
 
 	step = 0
-	changedRoute = False
 	
+
+        my_output_file = open(os.path.join('MapFirenze7','some_output.txt'), 'w')
+
+        changedRoute = False
+
+        
 	vehicle_id_last = []
 	vehicle_id_now  = []
 
@@ -131,10 +136,16 @@ def run():
 		
 	traci.close()
 
+        ambulance_travel_time = ambulance_arrival_step - ambulance_insertion_step
         print ('ambulance insterion step' ,         ambulance_insertion_step) 
         print ('ambulance arrival   step' ,         ambulance_arrival_step) 
-        print ('ambulance travel time   ' ,         ambulance_arrival_step - ambulance_insertion_step) 
-       
+        print ('ambulance travel time   ' ,         ambulance_travel_time) 
+
+        my_out_string = ';'.join([str(ambulance_insertion_step), str(ambulance_arrival_step), str(ambulance_travel_time)])
+        
+        my_output_file.write(my_out_string)
+        my_output_file.close()
+        
         ambulance_arrival_step   = None 
 	sys.stdout.flush()
 
