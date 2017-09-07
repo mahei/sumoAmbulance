@@ -34,7 +34,7 @@
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
 
-  <vType id="ambulance" jmDriveAterRedTime="300" jmDriveAfterRedSpeed="5.56"/>
+  <!--vType id="ambulance" jmDriveAterRedTime="300" jmDriveAfterRedSpeed="5.56"/-->
 
   <vehicle id="76" depart="36.00">
         <route edges="324493313#1 -324493313#1 27122630#0 27122630#1 172550906 181315402#1 51844397 181324764#0 181324764#1 181324764#2 161667684#0 161667684#1"/>
@@ -51,7 +51,8 @@
 
     
     
-    <vehicle id="ambulance_0" depart="60.00" color="1,1,1" type="ambulance" >
+    <!--vehicle id="ambulance_0" depart="60.00" color="1,1,1" type="ambulance" -->
+    <vehicle id="ambulance_0" depart="60.00" color="1,1,1"  >
       <route edges="-324493313#1 -324493313#0"/>
     </vehicle>
 
