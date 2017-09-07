@@ -1,7 +1,0 @@
-***Starting server on port 57573 ***
-Loading net-file from 'MapFirenze7/map.net.xml'... done (165ms).
-Loading additional-files from 'MapFirenze7/map.poly.xml'... done (76ms).
-Loading done.
-Simulation started with time: 0.00
-Simulation ended at time: 1002.00
-Reason: TraCI requested termination.
