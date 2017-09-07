@@ -1,4 +1,7 @@
 
+[x] find a traffic light
+[ ] create traffic for the traffic light
+
 [ ] upload scenario data
 
 [ ] are we using tests???
