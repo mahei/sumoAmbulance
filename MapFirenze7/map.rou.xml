@@ -38,10 +38,81 @@
   <vType id="ambulance" vClass="emergency"/>
 
     <!-- rescue scenario start-->
-  <vehicle id="76" depart="36.00">
-        <route edges="324493313#1 -324493313#1 27122630#0 27122630#1 172550906 181315402#1 51844397 181324764#0 181324764#1 181324764#2 161667684#0 161667684#1"/>
+  
+	<!-- Abdullah's Start -->
+	<vehicle id="1" depart="1.00">
+        <route edges="-324493313#1 -324493313#0"/>
     </vehicle>
-
+		
+	<vehicle id="2" depart="3.00">
+        <route edges="-324493313#1 -324493313#0"/>
+    </vehicle>
+	
+	<vehicle id="3" depart="5.00">
+        <route edges="-324493313#1 -324493313#0"/>
+    </vehicle>
+	
+	<vehicle id="4" depart="7.00">
+        <route edges="-324493313#1 -324493313#0"/>
+    </vehicle>
+	
+	<vehicle id="5" depart="10.00">
+        <route edges="-324493313#1 -324493313#0"/>
+    </vehicle>
+	
+	<vehicle id="6" depart="12.00">
+        <route edges="-324493313#1 -324493313#0"/>
+    </vehicle>
+	
+	<vehicle id="7" depart="14.00">
+        <route edges="-324493313#1 -324493313#0"/>
+    </vehicle>
+	
+	<vehicle id="8" depart="17.00">
+        <route edges="-324493313#1 -324493313#0"/>
+    </vehicle>
+	
+	<vehicle id="9" depart="19.00">
+        <route edges="-324493313#1 -324493313#0"/>
+    </vehicle>
+	
+	<vehicle id="10" depart="20.00">
+        <route edges="-324493313#1 324493313#1"/>
+    </vehicle>
+	
+	<vehicle id="11" depart="21.00">
+        <route edges="-324493313#1 27122630#0 27122630#1 172550906"/>
+    </vehicle>
+	
+	<vehicle id="12" depart="25.00">
+        <route edges="-324493313#1 324493313#1"/>
+    </vehicle>
+	
+	<vehicle id="13" depart="27.00">
+        <route edges="-324493313#1 27122630#0 27122630#1 172550906"/>
+    </vehicle>
+	
+	<vehicle id="14" depart="29.00">
+        <route edges="-324493313#1 324493313#1"/>
+    </vehicle>
+	
+	<vehicle id="15" depart="32.00">
+        <route edges="-324493313#1 27122630#0 24844099#0 24844099#1"/>
+    </vehicle>
+	
+	<vehicle id="16" depart="33.00">
+        <route edges="-324493313#1 324493313#1"/>
+    </vehicle>
+    <!-- Abdullah's End -->
+	
+  
+  <vehicle id="17" depart="36.00">
+        <route edges="-324493313#1 27122630#0 24844099#0 24844099#1"/>
+		<!-- 324493313#1 -324493313#1 27122630#0 27122630#1 172550906 181315402#1 51844397 181324764#0 181324764#1 181324764#2 161667684#0 161667684#1"/> -->
+    </vehicle>
+	
+	
+	
     <vehicle id="91" depart="37.00">
         <route edges="-324493313#1 324493313#1 324493313#2 381393822 347976778#2 352150507#0 352150507#1 229080888"/>
     </vehicle>
