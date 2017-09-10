@@ -6,10 +6,15 @@
         <net-file value="map.net.xml"/>
         <route-files value="map.rou.xml"/>
 	<additional-files value="map.poly.xml"/>
-	<gui-settings-file value="view.xml"/>
+	<gui-settings-file value="view2.xml"/>
     </input>
+	
+	<!-->
+	<gui_only>
+        <gui-settings-file value="settings.gui.xml"/>
+    </gui_only>
 
-    <!-->
+    
     <report>
         <no-duration-log value="true"/>
 		<log value="map_log.txt"/>
